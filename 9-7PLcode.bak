@@ -1,0 +1,15 @@
+#lang racket
+
+;(define sum-evens(lambda(x) (modulo x 2))
+  
+(define cube (lambda (x) (* x x x)))
+
+(define bigger (lambda (a b) (if (> a b) a b)))
+
+(define biggest (lambda (a b c) (bigger (bigger a b) c)))
+
+
+(define d (lambda (a) (quotient a 10)))
+(define digits (lambda (a) (if (= (d a) 0)
+                               0
+                               (d a))))  

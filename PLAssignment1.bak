@@ -1,0 +1,4 @@
+#lang racket
+
+(define sum-evens '(list)(cond(eq? (modulo(car x) 2) 1)(sum-evens)
+                              else (append!(x)))
